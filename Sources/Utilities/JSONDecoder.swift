@@ -7,7 +7,7 @@ func readJSON<T: Decodable>(type: T.Type,  fileName: String) throws -> T {
     let jsonFilePath = currentDirectory.appendingPathComponent(fileName).path
 
     guard let jsonData = try? Data(contentsOf: URL(fileURLWithPath: jsonFilePath)) else {
-        throw NSError(domain: "JSONDecodeError", code: 0, userInfo: [NSLocalizedDescriptionKey: "Não foi possível ler o arquivo JSON."])
+        throw NSError(domain: "JSONDecodeError", code: 0, userInfo: [NSLocalizedDescriptionKey: "Unable to read file"])
     }
 
     let decoder = JSONDecoder()

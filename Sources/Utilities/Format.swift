@@ -3,6 +3,7 @@ import Foundation
 enum Color: String {
     case red = "\u{001B}[31m"
     case green = "\u{001B}[32m"
+    case yellow = "\u{001B}[33m"
 }
 
 func formatString(_ inputString: String, _ color: Color? = nil) -> String {

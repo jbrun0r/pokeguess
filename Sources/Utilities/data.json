@@ -15,7 +15,7 @@
       "weight":69,
       "habitat":"grassland",
       "primaryColor":"green",
-      "hint":"A strange seed was\nplanted on its\nback at birth.\fThe plant sprouts\nand grows with\nthis POK\u00e9MON.",
+      "hint":"A strange seed was planted on its back at birth. The plant sprouts and grows with this POK\u00e9MON.",
       "sprite":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
    },
    {
@@ -34,7 +34,7 @@
       "weight":130,
       "habitat":"grassland",
       "primaryColor":"green",
-      "hint":"When the bulb on\nits back grows\nlarge, it appears\fto lose the\nability to stand\non its hind legs.",
+      "hint":"When the bulb on its back grows large, it appears to lose the ability to stand on its hind legs.",
       "sprite":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png"
    },
    {
@@ -53,7 +53,7 @@
       "weight":1000,
       "habitat":"grassland",
       "primaryColor":"green",
-      "hint":"The plant blooms\nwhen it is\nabsorbing solar\fenergy. It stays\non the move to\nseek sunlight.",
+      "hint":"The plant blooms when it is absorbing solar energy. It stays on the move to seek sunlight.",
       "sprite":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png"
    },
    {
@@ -72,7 +72,7 @@
       "weight":85,
       "habitat":"mountain",
       "primaryColor":"red",
-      "hint":"Obviously prefers\nhot places. When\nit rains, steam\fis said to spout\nfrom the tip of\nits tail.",
+      "hint":"Obviously prefers hot places. When it rains, steam is said to spout from the tip of its tail.",
       "sprite":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png"
    },
    {
@@ -91,7 +91,7 @@
       "weight":190,
       "habitat":"mountain",
       "primaryColor":"red",
-      "hint":"When it swings\nits burning tail,\nit elevates the\ftemperature to\nunbearably high\nlevels.",
+      "hint":"When it swings its burning tail, it elevates the temperature to unbearably high levels.",
       "sprite":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png"
    },
    {
@@ -110,7 +110,7 @@
       "weight":905,
       "habitat":"mountain",
       "primaryColor":"red",
-      "hint":"Spits fire that\nis hot enough to\nmelt boulders.\fKnown to cause\nforest fires\nunintentionally.",
+      "hint":"Spits fire that is hot enough to melt boulders. Known to cause forest fires unintentionally.",
       "sprite":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png"
    },
    {
@@ -129,7 +129,7 @@
       "weight":90,
       "habitat":"waters-edge",
       "primaryColor":"blue",
-      "hint":"After birth, its\nback swells and\nhardens into a\fshell. Powerfully\nsprays foam from\nits mouth.",
+      "hint":"After birth, its back swells and hardens into a shell. Powerfully sprays foam from its mouth.",
       "sprite":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png"
    },
    {
@@ -148,7 +148,7 @@
       "weight":225,
       "habitat":"waters-edge",
       "primaryColor":"blue",
-      "hint":"Often hides in\nwater to stalk\nunwary prey. For\fswimming fast, it\nmoves its ears to\nmaintain balance.",
+      "hint":"Often hides in water to stalk unwary prey. For swimming fast, it moves its ears to maintain balance.",
       "sprite":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png"
    },
    {
@@ -167,7 +167,7 @@
       "weight":855,
       "habitat":"waters-edge",
       "primaryColor":"blue",
-      "hint":"A brutal POK\u00e9MON\nwith pressurized\nwater jets on its\fshell. They are\nused for high\nspeed tackles.",
+      "hint":"A brutal POK\u00e9MON with pressurized water jets on its shell. They are used for high speed tackles.",
       "sprite":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png"
    },
    {
@@ -186,7 +186,7 @@
       "weight":29,
       "habitat":"forest",
       "primaryColor":"green",
-      "hint":"Its short feet are tipped with suction\npads that enable it to tirelessly climb\nslopes and walls.",
+      "hint":"Its short feet are tipped with suction pads that enable it to tirelessly climb slopes and walls.",
       "sprite":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png"
    },
    {
@@ -205,7 +205,7 @@
       "weight":99,
       "habitat":"forest",
       "primaryColor":"green",
-      "hint":"This POK\u00e9MON is\nvulnerable to\nattack while its\fshell is soft,\nexposing its weak\nand tender body.",
+      "hint":"This POK\u00e9MON is vulnerable to attack while its shell is soft, exposing its weak and tender body.",
       "sprite":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png"
    },
    {
@@ -224,7 +224,7 @@
       "weight":320,
       "habitat":"forest",
       "primaryColor":"white",
-      "hint":"In battle, it\nflaps its wings\nat high speed to\frelease highly\ntoxic dust into\nthe air.",
+      "hint":"In battle, it flaps its wings at high speed to release highly toxic dust into the air.",
       "sprite":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/12.png"
    },
    {
@@ -243,7 +243,7 @@
       "weight":32,
       "habitat":"forest",
       "primaryColor":"brown",
-      "hint":"Often found in\nforests, eating\nleaves.\fIt has a sharp\nvenomous stinger\non its head.",
+      "hint":"Often found in forests, eating leaves. It has a sharp venomous stinger on its head.",
       "sprite":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/13.png"
    },
    {
@@ -262,7 +262,7 @@
       "weight":100,
       "habitat":"forest",
       "primaryColor":"yellow",
-      "hint":"Almost incapable\nof moving, this\nPOK\u00e9MON can only\fharden its shell\nto protect itself\nfrom predators.",
+      "hint":"Almost incapable of moving, this POK\u00e9MON can only harden its shell to protect itself from predators.",
       "sprite":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/14.png"
    },
    {
@@ -281,7 +281,7 @@
       "weight":295,
       "habitat":"forest",
       "primaryColor":"yellow",
-      "hint":"It has three poisonous stingers on its forelegs and\nits tail. They are used to jab its enemy repeatedly.",
+      "hint":"It has three poisonous stingers on its forelegs and its tail. They are used to jab its enemy repeatedly.",
       "sprite":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/15.png"
    },
    {
@@ -300,7 +300,7 @@
       "weight":18,
       "habitat":"forest",
       "primaryColor":"brown",
-      "hint":"A common sight in\nforests and woods.\nIt flaps its\fwings at ground\nlevel to kick up\nblinding sand.",
+      "hint":"A common sight in forests and woods. It flaps its wings at ground level to kick up blinding sand.",
       "sprite":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/16.png"
    },
    {
@@ -319,7 +319,7 @@
       "weight":300,
       "habitat":"forest",
       "primaryColor":"brown",
-      "hint":"Very protective\nof its sprawling\nterritorial area,\fthis POK\u00e9MON will\nfiercely peck at\nany intruder.",
+      "hint":"Very protective of its sprawling territorial area, this POK\u00e9MON will fiercely peck at any intruder.",
       "sprite":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/17.png"
    },
    {
@@ -338,7 +338,7 @@
       "weight":395,
       "habitat":"forest",
       "primaryColor":"brown",
-      "hint":"When hunting, it\nskims the surface\nof water at high\fspeed to pick off\nunwary prey such\nas MAGIKARP.",
+      "hint":"When hunting, it skims the surface of water at high speed to pick off unwary prey such as MAGIKARP.",
       "sprite":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/18.png"
    },
    {
@@ -357,7 +357,7 @@
       "weight":35,
       "habitat":"grassland",
       "primaryColor":"purple",
-      "hint":"Bites anything\nwhen it attacks.\nSmall and very\fquick, it is a\ncommon sight in\nmany places.",
+      "hint":"Bites anything when it attacks. Small and very quick, it is a common sight in many places.",
       "sprite":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/19.png"
    },
    {
@@ -376,7 +376,7 @@
       "weight":185,
       "habitat":"grassland",
       "primaryColor":"brown",
-      "hint":"It uses its whis\u00ad\nkers to maintain\nits balance.\fIt apparently\nslows down if\nthey are cut off.",
+      "hint":"It uses its whis\u00ad kers to maintain its balance. It apparently slows down if they are cut off.",
       "sprite":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/20.png"
    }
 ]

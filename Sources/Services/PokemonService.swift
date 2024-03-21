@@ -46,24 +46,24 @@ func comparePokemons(_ entered: Pokemon, _ target: Pokemon) -> (String, Bool) {
         concatenatedAtt += formatString("\(entered.evolutionStage) ⬇", Color.red)
     }
     
-    let entereHeight: String = String(format: "%.1f", entered.height / 10)
+    let entereHeight: String = String(format: "%.1f", entered.height / 10) + "m"
     
     if entered.height == target.height {
         concatenatedAtt += formatString(entereHeight, Color.green)
     } else if entered.height < target.height {
-        concatenatedAtt += formatString(entereHeight + "m ⬆", Color.red)
+        concatenatedAtt += formatString(entereHeight + " ⬆", Color.red)
     } else {
-        concatenatedAtt += formatString(entereHeight + "m ⬇", Color.red)
+        concatenatedAtt += formatString(entereHeight + " ⬇", Color.red)
     }
     
-    let enteredWeight: String = String(format: "%.1f", entered.weight / 10)
+    let enteredWeight: String = String(format: "%.1f", entered.weight / 10) + "kg"
     
     if entered.weight == target.weight {
         concatenatedAtt += formatString(enteredWeight, Color.green)
     } else if entered.weight < target.weight {
-        concatenatedAtt += formatString(enteredWeight + "kg ⬆", Color.red)
+        concatenatedAtt += formatString(enteredWeight + " ⬆", Color.red)
     } else {
-        concatenatedAtt += formatString(enteredWeight + "kg ⬇", Color.red)
+        concatenatedAtt += formatString(enteredWeight + " ⬇", Color.red)
     }
     
     return (concatenatedAtt, isEqual)

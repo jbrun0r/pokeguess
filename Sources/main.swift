@@ -41,7 +41,7 @@ extension Pokeguess {
         @Argument(help: "Pokémon name") var pokemon: String
 
         mutating func run() {
-            print("Info: \(pokemon)")
+            guess(pokemon)
         }
     }
     

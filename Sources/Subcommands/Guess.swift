@@ -11,7 +11,7 @@ func guess(_ pokemonName: String) {
             return
         }
 
-        let (result, isEqual) = comparePokemons(enteredPokemon, targetPokemon)
+        let (result, isEqual) = comparePokemons(enteredPokemon, targetPokemon, useColors: true)
         
         saveHistory(result)
         

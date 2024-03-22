@@ -55,7 +55,7 @@ extension Pokeguess {
         )
 
         mutating func run() {
-            print("hint: ")
+            hint()
         }
     }
     

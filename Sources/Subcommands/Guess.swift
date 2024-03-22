@@ -12,8 +12,9 @@ func guess(_ pokemonName: String) -> Void {
         }
 
         let (result, isEqual) = comparePokemons(enteredPokemon, targetPokemon)
-        print(formatString("Name") + formatString("Type1") + formatString("Type2") + formatString("Ability1") + formatString("Ability2") + formatString("Primary Color") + formatString("Habitat") + formatString("Evolution Stage") + formatString("Height") + formatString("Weight"))
-        print(result)
+        
+        print("\n" + formatString("Name") + formatString("Type1") + formatString("Type2") + formatString("Ability1") + formatString("Ability2") + formatString("Primary Color") + formatString("Habitat") + formatString("Evolution Stage") + formatString("Height") + formatString("Weight"))
+        print(result + "\n")
 
         if isEqual {
             sortNewPokemon(pokemons.count)

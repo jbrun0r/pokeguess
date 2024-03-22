@@ -85,7 +85,7 @@ extension Pokeguess {
         )
 
         mutating func run() {
-            print("List: ")
+            list()
         }
     }
     

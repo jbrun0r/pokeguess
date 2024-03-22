@@ -1,6 +1,5 @@
 import Foundation
 
-
 func writeJSON<T: Encodable>(_ data: T, to fileName: String) throws {
     let scriptURL = URL(fileURLWithPath: #file)
     let currentDirectory = scriptURL.deletingLastPathComponent()

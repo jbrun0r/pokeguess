@@ -15,7 +15,7 @@ struct Pokeguess: ParsableCommand {
             """
         ,
         
-        subcommands: [Guess.self, Hint.self, Info.self, List.self]
+        subcommands: [Guess.self, Hint.self, Info.self, List.self, History.self]
     )
     
     mutating func run() throws {
@@ -88,6 +88,21 @@ extension Pokeguess {
             print("List: ")
         }
     }
+    
+    struct History: ParsableCommand {
+        static var configuration = CommandConfiguration(
+        abstract: "Show the history of attempts",
+        discussion:
+            """
+                This subcommand displays the history of attempts made to guess Pokémon.
+            """
+        )
+
+        mutating func run() {
+            hist()
+        }
+    }
+
 }
 
 Pokeguess.main()

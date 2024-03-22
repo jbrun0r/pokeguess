@@ -1,6 +1,6 @@
 import Foundation
 
-func readJSON<T: Decodable>(type: T.Type,  fileName: String) throws -> T {
+func readJSON<T: Decodable>(type: T.Type, fileName: String) throws -> T {
     
     let scriptURL = URL(fileURLWithPath: #file)
     let currentDirectory = scriptURL.deletingLastPathComponent()

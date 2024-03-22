@@ -77,3 +77,38 @@ func sortNewPokemon(_ lenght: Int) {
         print("Sort new pokémon error: \(error)")
     }
 }
+
+func saveHistory(_ result: String) {
+    do {
+        var history: [String] = try readJSON(type: [String].self, fileName: "history.json")
+        
+        history.append(result)
+        
+        try writeJSON(history, to: "history.json")
+    } catch {
+        print("History save error: \(error)")
+    }
+}
+
+func resetHistory() {
+    do {
+        let emptyList: [String] = []
+        
+        try writeJSON(emptyList, to: "history.json")
+        
+    } catch {
+        print("History save error: \(error)")
+    }
+}
+
+func printColumns() {
+    let columnNames = [
+        "Name", "Type1", "Type2", "Ability1", "Ability2",
+        "Primary Color", "Habitat", "Evolution Stage",
+        "Height", "Weight"
+    ]
+
+    let formattedColumnNames = columnNames.map { formatString($0) }.joined()
+    
+    print(formattedColumnNames)
+}

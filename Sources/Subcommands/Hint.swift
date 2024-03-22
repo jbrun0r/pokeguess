@@ -1,6 +1,6 @@
 import Foundation
 
-func hint() -> Void {
+func hint() {
     do {
         let pokemons: [Pokemon] = try readJSON(type: [Pokemon].self, fileName: "data.json")
         let targetPokemonId: Int = try readJSON(type: Int.self, fileName: "target.json")

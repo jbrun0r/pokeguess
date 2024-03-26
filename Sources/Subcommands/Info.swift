@@ -4,7 +4,7 @@ func info(_ pokemonName: String) {
     do {
         let pokemons: [Pokemon] = try readJSON(type: [Pokemon].self, fileName: "data.json")
 
-        guard let searchedPokemon = pokemons.first(where: { $0.name == pokemonName }) else {
+        guard let searchedPokemon = pokemons.first(where: { $0.name == pokemonName.lowercased() }) else {
             print("Searched Pokémon not found.")
             return
         }

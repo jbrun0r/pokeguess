@@ -50,7 +50,7 @@ extension Pokeguess {
         abstract: "Shows a hint about the target pokemon",
         discussion: 
             """
-            This subcommand is used to display an extra feature of the target Pokémon.
+            This subcommand is used to display the description of the target Pokémon.
             """
         )
 

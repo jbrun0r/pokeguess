@@ -2,12 +2,12 @@ import Foundation
 
 func comparePokemons(_ entered: Pokemon, _ target: Pokemon, useColors: Bool) -> (String, Bool) {
     
-    var concatenatedAtt: String = formatString(entered.name)
+    var concatenatedAtt: String = formatString(entered.name.capitalized)
     var isEqual: Bool = false
     
     if entered.id == target.id {
         isEqual = true
-        concatenatedAtt = formatString(entered.name, useColors ? .green : nil)
+        concatenatedAtt = formatString(entered.name.capitalized, useColors ? .green : nil)
     }
     
     for i in 0...1 {
@@ -66,9 +66,8 @@ func comparePokemons(_ entered: Pokemon, _ target: Pokemon, useColors: Bool) -> 
         concatenatedAtt += formatString(enteredWeight + " ⬇", useColors ? .red : nil)
     }
     
-    return (concatenatedAtt, isEqual)
+    return (concatenatedAtt + "║", isEqual)
 }
-
 
 func sortNewPokemon(_ lenght: Int) {
     do {
@@ -100,16 +99,4 @@ func resetHistory() {
     } catch {
         print("History save error: \(error)")
     }
-}
-
-func printColumns() {
-    let columnNames = [
-        "Name", "Type1", "Type2", "Ability1", "Ability2",
-        "Primary Color", "Habitat", "Evolution Stage",
-        "Height", "Weight"
-    ]
-
-    let formattedColumnNames = columnNames.map { formatString($0) }.joined()
-    
-    print(formattedColumnNames)
 }

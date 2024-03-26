@@ -9,15 +9,18 @@ func info(_ pokemonName: String) {
             return
         }
 
-        printColumns()
+        printHeader()
 
         let (formattedPokemonInfo, flag) = comparePokemons(searchedPokemon, searchedPokemon, useColors: false)
         
-        print(formattedPokemonInfo)
-        
-        print(searchedPokemon.sprite)
-        
-        print("About: \(searchedPokemon.hint)")
+        if flag {
+            print(formattedPokemonInfo)
+            printLine(formattedHeader.count)
+            
+            print("\n"+searchedPokemon.sprite)
+            
+            print("About: \(searchedPokemon.hint)\n\n")
+        }
         
     } catch {
         print(error)

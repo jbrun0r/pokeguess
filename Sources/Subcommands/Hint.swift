@@ -9,8 +9,16 @@ func hint() {
             print("Target Pokemon not found.")
             return
         }
-        print("\n\(formatString("Hint"))")
-        print("| \(Color.yellow.rawValue)\(targetPokemon.hint)\u{001B}[0m\n")
+        
+        let formattedHint = formatString(targetPokemon.hint) + " ║"
+        
+        print()
+        printLine(formattedHint.count)
+        print(formatString("Hint", nil, formattedHint.count-3) + "║")
+        printLine(formattedHint.count)
+        print(formattedHint)
+        printLine(formattedHint.count)
+        print()
 
     } catch {
         print(error)

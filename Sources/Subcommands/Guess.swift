@@ -5,7 +5,7 @@ func guess(_ pokemonName: String) {
         let pokemons: [Pokemon] = try readJSON(type: [Pokemon].self, fileName: "data.json")
         let targetPokemonId: Int = try readJSON(type: Int.self, fileName: "target.json")
         
-        guard let enteredPokemon = pokemons.first(where: { $0.name == pokemonName }),
+        guard let enteredPokemon = pokemons.first(where: { $0.name == pokemonName.lowercased() }),
             let targetPokemon = pokemons.first(where: { $0.id == targetPokemonId }) else {
             print("Entered or target Pokémon not found.")
             return
@@ -15,10 +15,15 @@ func guess(_ pokemonName: String) {
         
         saveHistory(result)
         
-        printColumns()
+        printHeader()
         print(result)
-
+        printLine(formattedHeader.count)
+        print()
+        
         if isEqual {
+           
+            print(targetPokemon.sprite)
+            printCongratulations()
             resetHistory()
             sortNewPokemon(pokemons.count)
         }

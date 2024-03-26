@@ -6,12 +6,47 @@ enum Color: String {
     case yellow = "\u{001B}[33m"
 }
 
-func formatString(_ inputString: String, _ color: Color? = nil) -> String {
+let header = [
+    "Name", "Type1", "Type2", "Ability1", "Ability2",
+    "Primary Color", "Habitat", "Evolution Stage",
+    "Height", "Weight"
+]
+
+let formattedHeader: String = header.map { formatString($0) }.joined() + "║"
+
+func formatString(_ inputString: String, _ color: Color? = nil, _ lenght: Int = 18) -> String {
     var formattedString: String = inputString
-    let spacesToAdd = max(0, 18 - formattedString.count)
+    let spacesToAdd = max(0, lenght - formattedString.count)
     if color != nil {
         formattedString = "\(color!.rawValue)\(formattedString)\u{001B}[0m"
     }
     let spaces = String(repeating: " ", count: spacesToAdd)
-    return "| " + formattedString + spaces
+    return "║ " + formattedString + spaces
+}
+
+func printHeader() {
+    print()
+    printLine(formattedHeader.count)
+    print(formattedHeader)
+    printLine(formattedHeader.count)
+}
+
+func printLine(_ lenght: Int) {
+    print(String(repeating: "═", count: lenght))
+}
+
+func printCongratulations() {
+    print(
+    """
+        \u{001B}[32m
+        ::::::::   ::::::::  ::::    :::  ::::::::  :::::::::      :::     ::::::::::: :::    ::: :::            :::     ::::::::::: :::::::::::  ::::::::  ::::    :::  ::::::::  :::
+       :+:    :+: :+:    :+: :+:+:   :+: :+:    :+: :+:    :+:   :+: :+:       :+:     :+:    :+: :+:          :+: :+:       :+:         :+:     :+:    :+: :+:+:   :+: :+:    :+: :+:
+       +:+        +:+    +:+ :+:+:+  +:+ +:+        +:+    +:+  +:+   +:+      +:+     +:+    +:+ +:+         +:+   +:+      +:+         +:+     +:+    +:+ :+:+:+  +:+ +:+        +:+
+       +#+        +#+    +:+ +#+ +:+ +#+ :#:        +#++:++#:  +#++:++#++:     +#+     +#+    +:+ +#+        +#++:++#++:     +#+         +#+     +#+    +:+ +#+ +:+ +#+ +#++:++#++ +#+
+       +#+        +#+    +#+ +#+  +#+#+# +#+   +#+# +#+    +#+ +#+     +#+     +#+     +#+    +#+ +#+        +#+     +#+     +#+         +#+     +#+    +#+ +#+  +#+#+#        +#+ +#+
+       #+#    #+# #+#    #+# #+#   #+#+# #+#    #+# #+#    #+# #+#     #+#     #+#     #+#    #+# #+#        #+#     #+#     #+#         #+#     #+#    #+# #+#   #+#+# #+#    #+#
+        ########   ########  ###    ####  ########  ###    ### ###     ###     ###      ########  ########## ###     ###     ###     ###########  ########  ###    ####  ########  ###
+        \u{001B}[0m\n
+    """
+    )
 }

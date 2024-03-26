@@ -9,9 +9,9 @@ struct Pokeguess: ParsableCommand {
         abstract: "Pokémon Guesser",
         discussion: 
             """
-                A guessing game of first-generation Pokémon. Enter the name of a Pokémon and
-                receive a comparison of the key features between the entered Pokémon and the
-                target Pokémon. Try to guess with the fewest number of attempts.
+            A guessing game of first-generation Pokémon. Enter the name of a Pokémon and
+            receive a comparison of the key features between the entered Pokémon and the
+            target Pokémon. Try to guess with the fewest number of attempts.
             """
         ,
         
@@ -33,8 +33,8 @@ extension Pokeguess {
         abstract: "Try to guess the target Pokémon",
         discussion: 
             """
-                Enter the name of a Pokémon and receive a comparison of the key features
-                between the entered Pokémon and the target Pokémon.
+            Enter the name of a Pokémon and receive a comparison of the key features
+            between the entered Pokémon and the target Pokémon.
             """
         )
         
@@ -50,7 +50,7 @@ extension Pokeguess {
         abstract: "Shows a hint about the target pokemon",
         discussion: 
             """
-                This subcommand is used to display an extra feature of the target Pokémon.
+            This subcommand is used to display an extra feature of the target Pokémon.
             """
         )
 
@@ -64,7 +64,7 @@ extension Pokeguess {
         abstract: "Shows information about available pokemon",
         discussion: 
             """
-                This subcommand display the features of a specific Pokémon.
+            This subcommand display the features of a specific Pokémon.
             """
         )
         
@@ -80,7 +80,7 @@ extension Pokeguess {
         abstract: "List all available pokemon",
         discussion: 
             """
-                This subcommand lists all available Pokémon.
+            This subcommand lists all available Pokémon.
             """
         )
 
@@ -94,7 +94,7 @@ extension Pokeguess {
         abstract: "Show the history of attempts",
         discussion:
             """
-                This subcommand displays the history of attempts made to guess Pokémon.
+            This subcommand displays the history of attempts made to guess Pokémon.
             """
         )
 

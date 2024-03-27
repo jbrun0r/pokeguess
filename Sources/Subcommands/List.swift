@@ -2,7 +2,7 @@ import Foundation
 
 func list() {
     do {
-        let pokemons: [Pokemon] = try readJSON(type: [Pokemon].self, fileName: "data.json")
+        let pokemons: [Pokemon] = try readJSON(type: [Pokemon].self, fileName: "data")
         
         let column = formatString(header[0]) + "║"
         

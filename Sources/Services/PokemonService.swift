@@ -72,7 +72,7 @@ func comparePokemons(_ entered: Pokemon, _ target: Pokemon, useColors: Bool) -> 
 func sortNewPokemon(_ lenght: Int) {
     do {
         let randomId = Int.random(in: 1...lenght)
-        try writeJSON(randomId, to: "target.json")
+        try writeJSON(randomId, to: "target")
     } catch {
         print("Sort new pokémon error: \(error)")
     }
@@ -80,11 +80,11 @@ func sortNewPokemon(_ lenght: Int) {
 
 func saveHistory(_ result: String) {
     do {
-        var history: [String] = try readJSON(type: [String].self, fileName: "history.json")
+        var history: [String] = try readJSON(type: [String].self, fileName: "history")
         
         history.append(result)
         
-        try writeJSON(history, to: "history.json")
+        try writeJSON(history, to: "history")
     } catch {
         print("History save error: \(error)")
     }
@@ -94,7 +94,7 @@ func resetHistory() {
     do {
         let emptyList: [String] = []
         
-        try writeJSON(emptyList, to: "history.json")
+        try writeJSON(emptyList, to: "history")
         
     } catch {
         print("History save error: \(error)")

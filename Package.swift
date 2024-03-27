@@ -19,6 +19,7 @@ let package = Package(
         .executableTarget(
             name: "pokeguess",
             dependencies: [.product(name: "ArgumentParser", package: "swift-argument-parser")],
+            resources: [.copy("data.json"), .copy("target.json"), .copy("history.json")],
             plugins: [.plugin(name: "SwiftLintPlugin", package: "SwiftLint")]
         ),
     ]

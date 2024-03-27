@@ -2,8 +2,8 @@ import Foundation
 
 func hint() {
     do {
-        let pokemons: [Pokemon] = try readJSON(type: [Pokemon].self, fileName: "data.json")
-        let targetPokemonId: Int = try readJSON(type: Int.self, fileName: "target.json")
+        let pokemons: [Pokemon] = try readJSON(type: [Pokemon].self, fileName: "data")
+        let targetPokemonId: Int = try readJSON(type: Int.self, fileName: "target")
         
         guard let targetPokemon = pokemons.first(where: { $0.id == targetPokemonId }) else {
             print("Target Pokemon not found.")

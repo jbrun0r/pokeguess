@@ -1,12 +1,13 @@
 import Foundation
 
 func readJSON<T: Decodable>(type: T.Type, fileName: String) throws -> T {
-    
-    let scriptURL = URL(fileURLWithPath: #file)
-    let currentDirectory = scriptURL.deletingLastPathComponent()
-    let jsonFilePath = currentDirectory.appendingPathComponent(fileName).path
+    let bundle = Bundle.module
 
-    guard let jsonData = try? Data(contentsOf: URL(fileURLWithPath: jsonFilePath)) else {
+    guard let jsonURL = bundle.url(forResource: fileName, withExtension: "json") else {
+        fatalError("JSON file not found in the bundle.")
+    }
+
+    guard let jsonData = try? Data(contentsOf: jsonURL) else {
         throw NSError(domain: "JSONDecodeError", code: 0, userInfo: [NSLocalizedDescriptionKey: "Unable to read file"])
     }
 
